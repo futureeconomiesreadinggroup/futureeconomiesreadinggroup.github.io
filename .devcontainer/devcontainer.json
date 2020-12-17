@@ -12,7 +12,8 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"prisma.vscode-graphql",
-		"maptz.camelcasenavigation"
+		"maptz.camelcasenavigation",
+		"marvhen.reflow-markdown"
 	],
 
 	"mounts": [
