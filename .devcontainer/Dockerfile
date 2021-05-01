@@ -45,10 +45,7 @@ RUN apt-get update \
     && curl -L -sS https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key | apt-key add - 2>/dev/null \
     && apt-get install -y man \
     && apt-get install -y fish \
-    && chsh -s /usr/bin/fish $USERNAME \
-    # Make python3 default
-    && update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 \
-    && update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
+    && chsh -s /usr/bin/fish $USERNAME
 
 # Set up persistent data home dir
 RUN mkdir /datahome \
